@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class PickupController {
     @GetMapping("/pickup")
     public String doPickup() {
+        // Select an 'item collection' out of 'display listings'.
+        // Schedule a pickup (time and location).
         return "pickupScheduled";
     }
 
