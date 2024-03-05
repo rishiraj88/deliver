@@ -7,6 +7,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController()
 @RequestMapping("/api/v1_0")
 public class PickupController {
+
+    /*
+     fetch Order
+     enrich Order
+     pay
+     dispatch
+     notify
+     */
     @GetMapping("/pickup")
     public String doPickup() {
         // Select an 'item collection' out of 'display listings'.
