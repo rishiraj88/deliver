@@ -1,4 +1,4 @@
-package de.deliver.entity.enum;
+package de.deliver.entity.enums;
 
 public enum ItemType {
     PRODUCT,SERVICE

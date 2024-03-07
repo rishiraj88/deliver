@@ -1,4 +1,4 @@
-package de.deliver.entity;
+package de.deliver.entity.enums;
 
 public enum ProductFormat {
     TANGIBLE,DIGITAL
