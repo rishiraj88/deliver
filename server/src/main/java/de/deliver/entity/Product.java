@@ -1,5 +1,7 @@
 package de.deliver.entity;
 
+import de.deliver.entity.enums.ProductFormat;
+
 public class Product extends Item{
     private ProductFormat form;
 }

@@ -1,5 +1,6 @@
 package de.deliver.entity;
 
+import de.deliver.entity.enums.ItemType;
 import lombok.Data;
 
 @Data
