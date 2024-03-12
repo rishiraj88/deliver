@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.time.ZonedDateTime;
 import java.util.List;
 
-@RestController()
+@RestController
 @RequestMapping("/api/v1_0/pickup")
 public class PickupController {
     private final PickupRepository pickupRepository;
@@ -33,17 +33,21 @@ public class PickupController {
         // Pick the products and/or get the sevices performed.
         // [4] dispatch
         pickup.setCompletedAt(ZonedDateTime.now());
-        return "{\"message\":\"Pickup completed!\"}";
+        //return "{\"message\":\"Pickup completed!\"}";
+        return "/list";
     }
 
     @GetMapping("/time")
     public String schedulePickup(List<Item> items, String dateTime) {
                 //[1] fetch Order
         // Select an 'item collection' out of 'display listings'.
-        Pickup pickup = new Pickup(items, Utils.stringToDatetime(dateTime));
+        //Pickup pickup = new Pickup(items, Utils.stringToDatetime(dateTime));
         // Schedule a pickup (time and location).
-        return "{\"message\":\"Pickup scheduled!\"}";
+        return "ehllo";
     }
 
-
+@GetMapping("/pickups")
+    public String listPickups() {
+    return "list";
+}
 }
