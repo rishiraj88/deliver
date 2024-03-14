@@ -27,14 +27,16 @@ public class Pickup {
     private Long id;
     private CollectionType collectionType;
 
-    // scheduledFor;
+    @JdbcTypeCode(SqlTypes.TIMESTAMP_WITH_TIMEZONE)
     private ZonedDateTime scheduledFor;
-    // completedAt;
+    @JdbcTypeCode(SqlTypes.TIMESTAMP_WITH_TIMEZONE)
     private ZonedDateTime completedAt;
+
     @JdbcTypeCode(SqlTypes.JSON)
     private User provider;
     @JdbcTypeCode(SqlTypes.JSON)
     private User beneficiary;
+
     public Pickup(List<Item> items, ZonedDateTime initialSchedule) {
         // [2] enrich Order/Pickup
         items=new ArrayList<>();
