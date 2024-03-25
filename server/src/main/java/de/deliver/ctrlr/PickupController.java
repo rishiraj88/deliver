@@ -26,6 +26,20 @@ public class PickupController {
         [4] dispatch
         [5] notify
      */
+    @GetMapping("/pickups")
+
+    public String listPickups() {
+        return "list";
+    }
+
+    @GetMapping("/time")
+    public String schedulePickup(List<Item> items, String dateTime) {
+        //[1] fetch Order
+        // Select an 'item collection' out of 'display listings'.
+        //Pickup pickup = new Pickup(items, Utils.stringToDatetime(dateTime));
+        // Schedule a pickup (time and location).
+        return "pickups";
+    }
     @GetMapping("/finish")
     public String doPickup(Pickup pickup) {
         // Select a Pickup in whole. Partial pickups not supported currently.
@@ -36,17 +50,5 @@ public class PickupController {
         return "list";
     }
 
-    @GetMapping("/time")
-    public String schedulePickup(List<Item> items, String dateTime) {
-                //[1] fetch Order
-        // Select an 'item collection' out of 'display listings'.
-        //Pickup pickup = new Pickup(items, Utils.stringToDatetime(dateTime));
-        // Schedule a pickup (time and location).
-        return "pickups";
-    }
 
-@GetMapping("/pickups")
-    public String listPickups() {
-    return "list";
-}
 }
