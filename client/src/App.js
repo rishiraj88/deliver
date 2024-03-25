@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from './SVG_logo_T.svg';
 import './App.css';
 
 function App() {
@@ -11,11 +11,11 @@ function App() {
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://github.com/rishiraj88?tab=repositories"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Share things, time and love. 
         </a>
       </header>
     </div>

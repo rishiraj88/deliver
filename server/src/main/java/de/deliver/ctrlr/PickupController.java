@@ -1,6 +1,5 @@
 package de.deliver.ctrlr;
 
-import de.deliver.common.Utils;
 import de.deliver.data.PickupRepository;
 import de.deliver.entity.Item;
 import de.deliver.entity.Pickup;
@@ -34,7 +33,7 @@ public class PickupController {
         // [4] dispatch
         pickup.setCompletedAt(ZonedDateTime.now());
         //return "{\"message\":\"Pickup completed!\"}";
-        return "/list";
+        return "list";
     }
 
     @GetMapping("/time")
@@ -43,7 +42,7 @@ public class PickupController {
         // Select an 'item collection' out of 'display listings'.
         //Pickup pickup = new Pickup(items, Utils.stringToDatetime(dateTime));
         // Schedule a pickup (time and location).
-        return "ehllo";
+        return "pickups";
     }
 
 @GetMapping("/pickups")

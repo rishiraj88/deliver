@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Frontend for End Users of deliver.de
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is under development right now. It will take a few days until we have it published.
 
 ## Available Scripts
 
@@ -68,3 +68,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Dev Notes
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
