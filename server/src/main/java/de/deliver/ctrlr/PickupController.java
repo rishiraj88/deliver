@@ -11,7 +11,7 @@ import java.time.ZonedDateTime;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/v1_0/pickup")
+@RequestMapping("/pickup") //api/v1_0/
 public class PickupController {
     private final PickupRepository pickupRepository;
 
@@ -26,8 +26,7 @@ public class PickupController {
         [4] dispatch
         [5] notify
      */
-    @GetMapping("/pickups")
-
+    @GetMapping("/")
     public String listPickups() {
         return "list";
     }

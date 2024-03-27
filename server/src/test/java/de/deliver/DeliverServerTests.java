@@ -1,10 +1,9 @@
 package de.deliver;
 
-import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ServerApplicationTests {
+public class DeliverServerTests {
 
 	//@Test
 	void contextLoads() {

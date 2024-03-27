@@ -8,8 +8,6 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.Data;
-import lombok.NoArgsConstructor;
-
 import org.hibernate.annotations.JdbcTypeCode;
 import org.hibernate.type.SqlTypes;
 import org.springframework.context.annotation.Lazy;
@@ -20,7 +18,6 @@ import java.util.List;
 
 @Data
 @Entity @Lazy
-@NoArgsConstructor
 public class Pickup {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -37,6 +34,7 @@ public class Pickup {
     @JdbcTypeCode(SqlTypes.JSON)
     private User beneficiary;
 
+    public Pickup() {}
     public Pickup(List<Item> items, ZonedDateTime initialSchedule) {
         // [2] enrich Order/Pickup
         items=new ArrayList<>();
